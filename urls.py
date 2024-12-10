@@ -27,4 +27,6 @@ urlpatterns = [
     path('reservation/', include('reservation.urls')),
     path('', include('reservation.urls')),
     path('reservation/booking/', include(router.urls)),
+    path('auth/', include('djoser.urls')),  # Djoser endpoints for user management
+    path('auth/', include('djoser.urls.authtoken')),
 ]
